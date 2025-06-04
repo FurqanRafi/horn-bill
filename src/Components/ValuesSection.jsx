@@ -24,26 +24,29 @@ const ValuesSection = () => {
   ];
 
   return (
-    <div className="px-4 py-12 bg-white max-w-7xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {cards.map((card, index) => (
-          <div
-            key={index}
-            className="rounded-lg shadow-md border border-gray-200 overflow-hidden hover:shadow-lg transition duration-300"
-          >
-            <Image
-              src={card.img}
-              alt={card.title}
-              className="w-full h-70 object-cover"
-              width={500}
-              height={224}
-            />
-            <div className="p-10 text-center">
-              <h3 className="text-xl font-semibold font-sans text-blue-600 mb-3">{card.title}</h3>
-              <p className="text-gray-700 font-sans text-sm">{card.text}</p>
+    <div className="w-full flex justify-center px-4 py-3 bg-white">
+      <div className="w-full lg:w-full max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="border border-gray-200 shadow-sm hover:shadow-lg transition-shadow duration-300  overflow-hidden bg-white"
+            >
+              <div className="w-full aspect-[3/2] relative">
+                <Image
+                  src={card.img}
+                  alt={card.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6 text-center">
+                <h3 className="text-xl font-semibold text-blue-600 mb-3">{card.title}</h3>
+                <p className="text-gray-700 text-sm leading-relaxed">{card.text}</p>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );
