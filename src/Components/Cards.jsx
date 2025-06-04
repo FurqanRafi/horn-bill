@@ -1,52 +1,50 @@
-import Image from 'next/image'
-import React from 'react'
-import { FaHeartbeat } from "react-icons/fa";
+import React from 'react';
+import { FaHeartbeat } from 'react-icons/fa';
 
 const Cards = () => {
     return (
-        <div className='w-full flex items-center justify-center '>
-            <div className='cards w-full lg:w-[80%]  flex items-center gap-2  '>
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-10  lg:p-9">
-                    <div className="border border-gray-200  p-6 text-center shadow-[0_0_6px_rgba(0,0,0,0.05)]">
-                        <div className="flex justify-center items-center mb-4 mt-10 ">
-                            <div className='bg-[#498ef3] rounded-full px-4 py-4'><FaHeartbeat className='text-5xl text-white' /></div>
+        <section className="w-full bg-white py-2 mt-10 flex justify-center">
+            <div className="w-full lg:max-w-[77%]">
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4    ">
+
+                    {[
+                        {
+                            title: 'ICU Equipment',
+                            description:
+                                'From advanced ventilators to patient monitors, we supply critical care equipment that ensures patient safety and supports healthcare professionals in delivering optimal care.',
+                        },
+                        {
+                            title: 'Imaging Equipment',
+                            description:
+                                'Our range includes state-of-the-art imaging solutions such as MRI machines, CT scanners, ultrasound devices, and X-ray systems, which provide accurate diagnostics and enhance treatment outcomes.',
+                        },
+                        {
+                            title: 'Hospital Furniture',
+                            description:
+                                'We offer hospital furniture designed for comfort, functionality, and durability—like hospital beds, bedside cabinets, and overbed tables—to support recovery and staff workflow.',
+                        },
+                        {
+                            title: 'Patient Care Products',
+                            description:
+                                'From infusion pumps to transport systems, our care products are built to enhance quality, patient comfort, and safety.',
+                        },
+                    ].map((card, i) => (
+                        <div
+                            key={i}
+                            className="bg-white border border-gray-200 px-5 py-10 mb-5 rounded-md shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
+                        >
+                            <div className="bg-[#498ef3] rounded-full p-4 mb-5">
+                                <FaHeartbeat className="text-4xl text-white" />
+                            </div>
+                            <h3 className="text-xl font-semibold mb-3 text-gray-800">{card.title}</h3>
+                            <p className="text-sm text-gray-600 leading-relaxed">{card.description}</p>
                         </div>
-                        <h3 className="text-lg font-sans font-medium mb-2">ICU Equipment</h3>
-                        <p className="text-sm font-light font-sans  text-black mb-18 ">
-                            From advanced ventilators to patient monitors, we supply critical care equipment that ensures patient safety and supports healthcare professionals in delivering optimal care.
-                        </p>
-                    </div>
-                    <div className=" border border-gray-200  p-6 text-center shadow-[0_0_6px_rgba(0,0,0,0.05)]">
-                        <div className="flex justify-center mb-4 mt-10">
-                            <div className='bg-[#498ef3] rounded-full px-4 py-4'><FaHeartbeat className='text-5xl text-white' /></div>
-                        </div>
-                        <h3 className="text-lg font-sans font-medium mb-2">Imaging Equipment</h3>
-                        <p className="text-sm font-light  font-sans">
-                            Our range includes state-of-the-art imaging solutions such as MRI machines, CT scanners, ultrasound devices, and X-ray systems, which provide accurate diagnostics and enhance treatment outcomes.
-                        </p>
-                    </div>
-                    <div className="border border-gray-200  p-6 text-center shadow-[0_0_6px_rgba(0,0,0,0.05)]">
-                        <div className="flex justify-center mb-4 mt-10">
-                            <div className='bg-[#498ef3] rounded-full px-4 py-4'><FaHeartbeat className='text-5xl text-white' /></div>
-                        </div>
-                        <h3 className="text-lg font-sans font-medium mb-2">Hospital Furniture</h3>
-                        <p className="text-sm font-light text-black font-sans">
-                            We offer a variety of hospital furniture designed for comfort, functionality, and durability, including hospital beds, bedside cabinets, and overbed tables, all crafted to support patient recovery and improve workflow efficiency for healthcare staff.
-                        </p>
-                    </div>
-                    <div className="border border-gray-200  p-6 text-center shadow-[0_0_6px_rgba(0,0,0,0.05)] flex flex-col items-center  ">
-                        <div className="flex justify-center mb-4 mt-10">
-                            <div className='bg-[#498ef3] rounded-full px-4 py-4'><FaHeartbeat className='text-5xl text-white' /></div>
-                        </div>
-                        <h3 className="text-lg font-sans font-medium mb-2">Patient Care Products</h3>
-                        <p className="text-sm font-light  font-sans">
-                            From infusion pumps to patient transport systems, our patient care products are designed to enhance the quality of care and ensure patient comfort and safety.
-                        </p>
-                    </div>
+                    ))}
+
                 </div>
             </div>
-        </div>
-    )
-}
+        </section>
+    );
+};
 
-export default Cards
+export default Cards;
