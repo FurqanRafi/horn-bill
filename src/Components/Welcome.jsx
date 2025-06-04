@@ -5,7 +5,7 @@ import about from '@/assets/aboutpic.webp';
 const Welcome = () => {
     return (
         <div className='w-full px-4 md:px-10 lg:px-20 flex flex-col lg:flex-row items-center justify-center gap-10 pt-10 pb-20'>
-            <div className='w-full lg:w-[80%] flex flex-col lg:flex-row items-center gap-20 justify-center'>
+            <div className='w-full lg:w-[83%] flex flex-col lg:flex-row items-center gap-20 justify-center'>
                 <div className='w-full lg:w-1/2 flex flex-col gap-6 text-left'>
                     <h1 className="text-[#498ef3] font-sans font-semibold inline-block 
                border-l-4 pl-2 border-[#fab60a] 

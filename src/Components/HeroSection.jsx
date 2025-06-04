@@ -4,22 +4,22 @@ import Image from 'next/image'
 
 const HeroSection = () => {
   return (
-    <div className='w-full' >
+    <div className=' w-full  ' >
 
-      <div className="w-full relative lg:mt-[-84]">
+      <div className="w-full relative lg:mt-[-76]">
 
         <Image
           src={banner}
           alt="banner"
-          className="w-full h-[60vh] sm:h-[70vh] md:h-[80vh] lg:h-screen object-cover"
+          className="w-full h-[60vh] sm:h-[50vh] md:h-[80vh] lg:h-screen object-cover"
           priority
         />
 
 
-        <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute top-1/2 left-0 transform  -translate-y-[50%] w-full px-4 sm:px-8 md:px-16  lg:px-24">
-          <div className="w-full lg:w-1/2 flex flex-col gap-6  text-left">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight font-bold">
+        <div className="absolute inset-0 bg-black/60 " />
+        <div className="absolute top-1/2 left-[47%]  transform  -translate-y-[50%] -translate-x-1/2 w-[80%]  px-4 sm:px-8 md:px-16  lg:px-24">
+          <div className="w-full  lg:w-[57%] flex flex-col gap-6  text-left">
+            <h1 className="text-2xl md:text-3xl lg:text-3xl xl:text-7xl text-white leading-tight font-bold">
               Better <span className="text-[#008df2]">Healthcare</span> you can get
             </h1>
             <p className="text-white text-sm sm:text-base md:text-lg font-light">
