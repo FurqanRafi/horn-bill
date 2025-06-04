@@ -16,7 +16,7 @@ const HeroSection = () => {
         />
 
 
-        <div className="absolute inset-0 bg-black/60 " />
+        <div className="absolute inset-0 bg-black/60" />
         <div className="absolute top-1/2 left-[47%]  transform  -translate-y-[50%] -translate-x-1/2 w-[80%]  px-4 sm:px-8 md:px-16  lg:px-24">
           <div className="w-full  lg:w-[57%] flex flex-col gap-6  text-left">
             <h1 className="text-2xl md:text-3xl lg:text-3xl xl:text-7xl text-white leading-tight font-bold">
