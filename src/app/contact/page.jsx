@@ -9,7 +9,7 @@ const page = () => {
     <div className="w-full ">
 
 
-            <div className="w-full h-[50vh] relative lg:-mt-20">
+            <div className="w-full h-[50vh] lg:h-[80vh] relative lg:mt-[-84]">
                 <Image src={contact} alt="ContactUs" className="w-full h-full object-cover" />
                 <div className="absolute inset-0 bg-black/60"></div>
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center  text-center px-4 max-w-3xl w-full h-full">

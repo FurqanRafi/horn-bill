@@ -76,7 +76,7 @@ const Header = () => {
     return (
         <div className='w-full max-w-[1400px] mx-auto px-4 sm:px-10'>
             {/* Header Top Row */}
-            <div className='lg:w-full  flex items-center justify-between gap-6 py-8'>
+            <div className='lg:w-full  flex items-center justify-between gap-6 py-6'>
                 {/* Logo */}
                 <div className='flex items-center'>
                     <Image src={logo} alt='logo' width={220} height={220} />
@@ -92,7 +92,7 @@ const Header = () => {
                         </div>
                         <div className='w-full'>
                             <h1 className='text-sm font-sans font-light'>Call Us:</h1>
-                            <p className='text-sm text-blue-600 font-semibold font-sans'>0512308328-9</p>
+                            <p className='text-md text-blue-600 font-semibold font-sans'>0512308328-9</p>
                         </div>
                     </div>
                     <div className='w-1/2 flex items-center gap-2'>
@@ -103,7 +103,7 @@ const Header = () => {
                         </div>
                         <div className='w-full'>
                             <h1 className='text-sm font-light font-sans '>Visit Us:</h1>
-                            <p className='text-sm text-blue-600 font-semibold'>House No 02, Main Service Road, G-16/4, Islamabad</p>
+                            <p className='text-md    text-blue-600 font-semibold'>House No 02, Main Service Road, G-16/4, Islamabad</p>
                         </div>
                     </div>
                     <button className='w-1/4 hover:bg-[#498ef3] hover:text-white bg-[#fab60a] text-black px-5 py-3 text-lg font-md'>
@@ -123,19 +123,16 @@ const Header = () => {
 
             {/* Desktop Nav */}
             <nav className='hidden lg:flex items-center justify-center gap-10 py-7 border-t bg-[#008df2] z-10 relative border-gray-200'>
-                <Link href='/' className='text-white hover:text-[#fab60a] font-semibold'>Home</Link>
-                <Link href='/about' className='text-white hover:text-[#fab60a] font-semibold'>About</Link>
-                <Link href='/services' className='text-white hover:text-[#fab60a] font-semibold'>Services</Link>
-                <Link href='/contact' className='text-white hover:text-[#fab60a] font-semibold'>Contact</Link>
+                <Link href='/' className='text-white text-xl hover:text-[#fab60a] font-semibold'>Home</Link>
+                <Link href='/about' className='text-white text-xl hover:text-[#fab60a] font-semibold'>About</Link>
+                <Link href='/services' className='text-white text-xl hover:text-[#fab60a] font-semibold'>Services</Link>
+                <Link href='/contact' className='text-white text-xl hover:text-[#fab60a] font-semibold'>Contact</Link>
             </nav>
 
-            {/* Mobile Menu */}
+            
             {menuOpen && (
-                <div className=' w-full h-full  fixed inset-0 flex z-50'>
-                    {/* Left Transparent Side */}
+                <div className=' w-full h-full  fixed inset-0 flex z-50'> 
                     <div className=' w-[20%] backdrop-blur-lg' onClick={() => setMenuOpen(false)}></div>
-
-                    {/* Right Menu Side */}
                     <div className='w-[80%] bg-white p-6 relative flex flex-col'>
                         <div className='flex items-center'>
                             <Image src={logo} alt='logo' width={140} height={140} />

@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <div className='w-full' >
 
-      <div className="w-full relative lg:mt-[-80]">
+      <div className="w-full relative lg:mt-[-84]">
 
         <Image
           src={banner}
