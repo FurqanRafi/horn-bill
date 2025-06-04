@@ -4,9 +4,9 @@ import Image from 'next/image'
 
 const HeroSection = () => {
   return (
-    <div className='w-full h-screen' >
+    <div className='w-full' >
 
-      <div className="w-full relative mt-[-80px]">
+      <div className="w-full relative lg:mt-[-80]">
 
         <Image
           src={banner}
@@ -17,7 +17,7 @@ const HeroSection = () => {
 
 
         <div className="absolute inset-0 bg-black/60" />
-        <div className="absolute top-1/2 left-0 transform  -translate-y-[20%] w-full px-4 sm:px-8 md:px-16  lg:px-24">
+        <div className="absolute top-1/2 left-0 transform  -translate-y-[50%] w-full px-4 sm:px-8 md:px-16  lg:px-24">
           <div className="w-full lg:w-1/2 flex flex-col gap-6  text-left">
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white leading-tight font-bold">
               Better <span className="text-[#008df2]">Healthcare</span> you can get
