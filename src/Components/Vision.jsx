@@ -4,8 +4,8 @@ import vision from '@/assets/vision.webp';
 
 const Vision = () => {
     return (
-        <section className="w-full flex justify-center py-10 bg-white">
-            <div className="w-full lg:max-w-6xl px-4 sm:px-6 md:px-8 lg:px-0 mx-auto flex flex-col lg:flex-row items-center gap-8">
+        <section className="w-full Mycontainer flex justify-center py-10 bg-white">
+            <div className="w-full flex flex-col lg:flex-row items-center gap-8">
                 
                 {/* Left: Image */}
                 <div className="w-full lg:w-1/2">
