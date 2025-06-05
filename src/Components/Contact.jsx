@@ -2,10 +2,10 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <section className="w-full bg-white py-16 px-4">
-            <div className="max-w-6xl mx-auto">
+        <section className="w-full bg-white">
+            <div className="w-full lg:max-w-6xl px-4 sm:px-6 md:px-8 lg:px-0 mx-auto">
                 {/* Heading */}
-                <div className="text-center mb-12 px-4">
+                <div className="text-center mb-12">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0094f5]">
                         Contact Us
                     </h2>

@@ -4,7 +4,7 @@ import ValuesSection from './ValuesSection'
 const Commit = () => {
   return (
     <section className="w-full py-16 px-4 md:px-10 lg:px-20 bg-white">
-      <div className="w-full lg:max-w-[85%] mx-auto text-center">
+      <div className="w-full lg:max-w-6xl mx-auto text-center">
         {/* Top Headline */}
         <h2 className="border-l-4 border-r-4 border-[#fab60a] inline-block text-[#498ef3] font-medium font-sans px-4 text-sm md:text-base mb-4">
           Our Values: Compassion, Innovation, Trust

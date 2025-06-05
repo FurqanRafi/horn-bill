@@ -6,7 +6,7 @@ import { FaHeartbeat } from 'react-icons/fa';
 const Services = () => {
     return (
         <section className="w-full flex justify-center px-4  lg:mt-5 bg-white">
-            <div className="w-full lg:max-w-[77%] flex flex-col lg:flex-row  overflow-hidden">
+            <div className="w-full lg:max-w-6xl flex flex-col lg:flex-row  overflow-hidden">
 
                 {/* LEFT IMAGE SIDE */}
                 <div className="relative w-full lg:w-1/2 h-[300px] lg:h-auto">
