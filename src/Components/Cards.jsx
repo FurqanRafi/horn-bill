@@ -3,8 +3,8 @@ import { FaHeartbeat } from 'react-icons/fa';
 
 const Cards = () => {
     return (
-        <section className="w-full  bg-white  flex justify-center">
-            <div className="w-full Mycontainer  ">
+        <section className="w-full   bg-white  flex justify-center">
+            <div className="w-full  Mycontainer  ">
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[
                         {
