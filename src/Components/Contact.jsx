@@ -2,8 +2,8 @@ import React from 'react'
 
 const Contact = () => {
     return (
-        <section className="w-full bg-white">
-            <div className="w-full mb-10 lg:max-w-6xl px-4 sm:px-6 md:px-8 lg:px-0  mx-auto">
+        <section className="w-full mb-10 bg-white">
+            <div className="w-full Mycontainer  ">
                 {/* Heading */}
                 <div className="text-center mb-12">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0094f5]">

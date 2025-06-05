@@ -4,9 +4,9 @@ import about from '@/assets/aboutpic.webp';
 
 const Welcome = () => {
     return (
-        <div className='w-full bg-white py-10'>
-            <div className='w-full px-4 md:px-12 lg:px-20'>
-                <div className='w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12'>
+        <div className='w-full Mycontainer bg-white py-10'>
+            <div className='w-full '>
+                <div className='w-full flex flex-col lg:flex-row items-center gap-12'>
                     
                     {/* Text Content */}
                     <div className='w-full lg:w-1/2 flex flex-col gap-6 text-left'>

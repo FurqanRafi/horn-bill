@@ -10,9 +10,9 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <div className='w-full max-w-[1235px] mx-auto px-4 sm:px-10'>
+        <div className='w-full   px-4 sm:px-10'>
             {/* Header Top Row */}
-            <div className='lg:w-full  flex items-center justify-between  py-6'>
+            <div className='lg:w-full Mycontainer  flex items-center justify-between  py-6'>
                 {/* Logo */}
                 <div className='flex items-center'>
                     <Image src={logo} alt='logo' width={211} height={211} />
@@ -62,7 +62,7 @@ const Header = () => {
             </div>
 
             {/* Desktop Nav */}
-            <nav className='hidden lg:flex items-center justify-center gap-20 py-6 border-t bg-[#008df2] z-10 relative border-gray-200'>
+            <nav className='hidden Mycontainer lg:flex items-center justify-center gap-20 py-6 border-t bg-[#008df2] z-10 relative border-gray-200'>
                 <Link href='/' className='text-white text-xl hover:text-[#fab60a] font-medium'>Home</Link>
                 <Link href='/about' className='text-white text-xl hover:text-[#fab60a] font-medium'>About</Link>
                 <Link href='/services' className='text-white text-xl hover:text-[#fab60a] font-medium'>Services</Link>

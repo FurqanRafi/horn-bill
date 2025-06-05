@@ -24,15 +24,15 @@ const ValuesSection = () => {
   ];
 
   return (
-    <section className="w-full bg-white flex justify-center">
-      <div className="w-full max-w-6xl  px-4 sm:px-6 md:px-8 lg:px-0 mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <section className="w-full bg-white flex items-center justify-between">
+      <div className="w-full ">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
             <div
               key={index}
               className="w-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-md overflow-hidden flex flex-col"
             >
-              <div className="w-full aspect-[5/4] relative">
+              <div className="w-full aspect-[3/2] relative">
                 <Image
                   src={card.img}
                   alt={card.title}

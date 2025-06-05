@@ -13,7 +13,7 @@ import logo from '@/assets/logo.webp';
 const Footer = () => {
     return (
         <footer className="bg-[#0095f6] text-white">
-            <div className="w-full lg:max-w-6xl px-4  mx-auto py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
+            <div className="w-full Mycontainer py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
                 
                 {/* Logo and Intro */}
                 <div>
@@ -86,10 +86,12 @@ const Footer = () => {
             </div>
 
             {/* Bottom Bar */}
-            <div className="border-t border-white text-center py-4 text-sm bg-[#0095f6]">
+            <div className="border-t  border-white text-center py-4 text-sm md:px-6 bg-[#0095f6]">
+                <div className='w-full Mycontainer' >
                 © All Rights Reserved 2024 | Develop by DevsRank &nbsp;
                 <a href="#" className="underline">Privacy Policy</a> &nbsp;|&nbsp;
                 <a href="#" className="underline">Disclaimer</a>
+                </div>
             </div>
         </footer>
     );

@@ -3,8 +3,8 @@ import Cards from './Cards'
 
 const Who = () => {
   return (
-    <section className="w-full bg-white py-12 px-4">
-      <div className="w-full max-w-6xl mx-auto flex flex-col items-center text-center space-y-6">
+    <section className="w-full  bg-white py-12 px-4">
+      <div className="w-full Mycontainer  flex flex-col items-center text-center space-y-6">
         
         <h2 className="border-l-4 border-r-4 border-[#fab60a] text-[#498ef3] px-4 py-1 font-medium text-sm sm:text-base">
           Who We Are

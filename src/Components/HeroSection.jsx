@@ -4,7 +4,7 @@ import banner from '@/assets/banner.webp'
 
 const HeroSection = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full  lg:mt-[-76] relative">
       {/* Background Image */}
       <Image
         src={banner}
@@ -14,15 +14,15 @@ const HeroSection = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/60 z-10" />
+      <div className="absolute inset-0 bg-black/60 " />
 
       {/* Responsive Container (same as header) */}
-      <div className="absolute inset-0 flex items-center justify-center   z-20">
-        <div className="w-full px-4 md:px-12  lg:px-20">
-          <div className="w-full md:max-w-6xl  max-w-6xl mx-auto">
+      <div className="absolute inset-0 flex items-center justify-center   z-0">
+        <div className="w-full Mycontainer ">
+          <div className="w-full  ">
             <div className=" w-full lg:w-1/2 xl:w-[60%]  text-left space-y-6">
-              <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-7xl text-white font-bold leading-tight">
-                Better <span className="text-[#008df2]">Healthcare</span> you can get
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-7xl text-white font-bold leading-tight">
+                Better <span className="text-[#008df2]">Healthcare</span> <br />you can get
               </h1>
               <p className="text-white text-sm md:text-base lg:text-lg font-light">
                 With years of experience in the medical equipment industry, our team possesses the knowledge and expertise to provide tailored solutions that meet the specific needs of healthcare providers.

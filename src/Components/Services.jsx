@@ -5,8 +5,8 @@ import { FaHeartbeat } from 'react-icons/fa';
 
 const Services = () => {
     return (
-        <section className="w-full flex justify-center px-4 pb-3   bg-white">
-            <div className="w-full lg:max-w-6xl flex flex-col lg:flex-row  overflow-hidden">
+        <section className="Mycontainer flex justify-center  pb-3   bg-white">
+            <div className=" w-full   flex flex-col lg:flex-row  overflow-hidden">
 
                 {/* LEFT IMAGE SIDE */}
                 <div className="relative w-full lg:w-1/2 h-[300px] lg:h-auto">
@@ -14,7 +14,7 @@ const Services = () => {
                         src={Service}
                         alt="Service Image"
                         fill
-                        className="object-cover"
+                        className="object-cover w-full"
                         sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                 </div>

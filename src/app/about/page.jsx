@@ -9,7 +9,7 @@ import Commit from '@/Components/Commit'
 
 const page = () => {
   return (
-    <div className="w-full relative">
+    <div className="w-full relative ">
       
       
       <div className="w-full h-[50vh] lg:h-[80vh] relative lg:mt-[-76]">
