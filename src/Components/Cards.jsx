@@ -4,8 +4,8 @@ import { FaHeartbeat } from 'react-icons/fa';
 const Cards = () => {
     return (
         <section className="w-full   bg-white  flex justify-center">
-            <div className="w-full  Mycontainer  ">
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="w-full ">
+                <div className=" Mycontainer   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[
                         {
                             title: 'ICU Equipment',
