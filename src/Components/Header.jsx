@@ -10,9 +10,9 @@ const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
-        <div className='w-full   px-4 sm:px-10'>
+        <div className='w-full   '>
             {/* Header Top Row */}
-            <div className='lg:w-full Mycontainer  flex items-center justify-between  py-6'>
+            <div className='lg:w-full Mycontainer   flex items-center justify-between  py-6'>
                 {/* Logo */}
                 <div className='flex items-center'>
                     <Image src={logo} alt='logo' width={211} height={211} />
