@@ -28,7 +28,7 @@ const HeroSection = () => {
                 With years of experience in the medical equipment industry, our team possesses the knowledge and expertise to provide tailored solutions that meet the specific needs of healthcare providers.
               </p>
               <div>
-                <button className="text-sm md:text-base bg-[#fab60a] px-6 py-3 rounded hover:text-white hover:bg-[#498ef3] transition duration-300">
+                <button className="cursor-pointer text-sm md:text-base bg-[#fab60a] px-6 py-3 rounded hover:text-white hover:bg-[#498ef3] transition duration-300">
                   Learn More
                 </button>
               </div>
