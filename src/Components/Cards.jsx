@@ -4,8 +4,8 @@ import { FaHeartbeat } from 'react-icons/fa';
 const Cards = () => {
     return (
         <section className="w-full   bg-white  flex justify-center">
-            <div className="w-full ">
-                <div className=" Mycontainer   grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="w-full Mycontainer ">
+                <div className="    grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                     {[
                         {
                             title: 'ICU Equipment',
@@ -30,7 +30,7 @@ const Cards = () => {
                     ].map((card, i) => (
                         <div
                             key={i}
-                            className="bg-white border border-gray-200 px-5 py-10 rounded-md shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
+                            className="bg-white border border-gray-200 px-6 pt-10 pb-25 rounded-sm shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
                         >
                             <div className="bg-[#498ef3] rounded-full p-4 mb-5">
                                 <FaHeartbeat className="text-4xl text-white" />
