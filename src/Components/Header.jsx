@@ -12,8 +12,8 @@ const Header = () => {
         <div className='w-full'>
             {/* Header Top Row */}
             <div className='lg:w-full Mycontainer flex items-center justify-between py-6'>
-                <Link href='/' className='flex items-center'>
-                    <Image src={logo} alt='logo' width={211} height={211} />
+                <Link href='/' className='flex items-center '>
+                    <Image src={logo} alt='logo' width={211} height={211} className='w-37 lg:w-[211px] h-auto'  />
                 </Link>
 
                 <div className='hidden lg:flex items-center justify-end gap-3 '>
