@@ -65,7 +65,7 @@ import CTO from '@/assets/CTO.webp'
 const Partner = () => {
     return (
         <div className='w-full flex items-center justify-center'>
-            <div className="w-full max-w-6xl mx-auto  bg-white py-10 flex justify-center">
+            <div className="w-full max-w-6xl mx-auto  bg-white  flex justify-center">
             {/* This wrapper now matches header width */}
             <div className="w-full lg:w-full bg-[#498ef3] flex flex-col lg:flex-row items-stretch  overflow-hidden">
 
