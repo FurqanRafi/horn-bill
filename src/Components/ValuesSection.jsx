@@ -30,7 +30,7 @@ const ValuesSection = () => {
           {cards.map((card, index) => (
             <div
               key={index}
-              className="w-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow rounded-md overflow-hidden flex flex-col"
+              className="w-full bg-white border border-gray-200 shadow-sm hover:shadow-md transition-shadow  overflow-hidden flex flex-col"
             >
               <div className="w-full aspect-[3/2] relative">
                 <Image
