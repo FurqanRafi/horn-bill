@@ -20,8 +20,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 flex items-center justify-center   z-20">
         <div className="w-full px-4 md:px-12  lg:px-20">
           <div className="w-full md:max-w-6xl  max-w-6xl mx-auto">
-            <div className=" w-full lg:w-1/2 text-left space-y-6">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl xl:text-6xl text-white font-bold leading-tight">
+            <div className=" w-full lg:w-1/2 xl:w-[60%]  text-left space-y-6">
+              <h1 className="text-4xl md:text-4xl lg:text-5xl xl:text-7xl text-white font-bold leading-tight">
                 Better <span className="text-[#008df2]">Healthcare</span> you can get
               </h1>
               <p className="text-white text-sm md:text-base lg:text-lg font-light">
