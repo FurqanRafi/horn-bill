@@ -60,7 +60,7 @@ const Contact = () => {
                     <div className="md:col-span-2 flex justify-center">
                         <button
                             type="submit"
-                            className="bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-[#0094f5] hover:text-white transition duration-300"
+                            className="cursor-pointer bg-yellow-500 text-black font-semibold px-6 py-3 rounded hover:bg-[#0094f5] hover:text-white transition duration-300"
                         >
                             Send
                         </button>

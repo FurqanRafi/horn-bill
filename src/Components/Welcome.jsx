@@ -23,7 +23,7 @@ const Welcome = () => {
                         </p>
 
                         <div className='mt-4'>
-                            <button className='text-sm md:text-base bg-[#fab60a] px-6 py-2 rounded hover:text-white hover:bg-[#498ef3] transition-all duration-300'>
+                            <button className='text-sm md:text-base bg-[#fab60a] px-6 py-2 rounded hover:text-white hover:bg-[#498ef3] transition-all duration-300 cursor-pointer'>
                                 Learn More
                             </button>
                         </div>
