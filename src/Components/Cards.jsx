@@ -30,7 +30,7 @@ const Cards = () => {
                     ].map((card, i) => (
                         <div
                             key={i}
-                            className="bg-white border border-gray-200 px-6 pt-10 pb-25  shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
+                            className="bg-white border border-gray-200 px-3 pt-10 pb-20  shadow-sm hover:shadow-md transition-shadow flex flex-col items-center text-center h-full"
                         >
                             <div className="bg-[#498ef3] rounded-full p-4 mb-5">
                                 <FaHeartbeat className="text-4xl text-white" />

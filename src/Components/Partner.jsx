@@ -22,22 +22,22 @@ const Partner = () => {
                         <div className="bg-[#fab60a] p-4 rounded-full">
                             <FaHeartbeat className="text-3xl md:text-4xl text-[#498ef3]" />
                         </div>
-                        <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-white font-sans leading-tight">
+                        <h1 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold lg:px-4 text-white font-sans leading-tight">
                             With a Touch of Kindness
                         </h1>
                     </div>
                 </div>
 
                 {/* Right Section */}
-                <div className="w-full Mycontainer flex items-center justify-center py-10 px-4 sm:px-6 md:px-8 ">
-                    <div className="w-full flex flex-col md:flex-row items-center px-20 justify-between gap-2 ">
+                <div className="w-full Mycontainer flex items-center justify-center py-15 px-4 sm:px-6 md:px-10 lg:px-15 ">
+                    <div className="w-full flex flex-col md:flex-row items-center px-5 justify-between gap-8 ">
                         {[
                             { name: "Mudassar Iqbal", role: "CEO", image: CEO },
                             { name: "Engr. Mudassar Iqbal", role: "CTO", image: CTO },
                             { name: "Mr. Ali Raza", role: "CFO", image: CEO },
                         ].map((person, i) => (
-                            <div key={i} className="flex flex-col items-center text-center">
-                                <div className="w-[16vw] h-[16vw] lg:w-[4vw] lg:h-[4vw] rounded-full bg-white overflow-hidden">
+                            <div key={i} className="flex flex-col items-center text-center  ">
+                                <div className="w-[24vw] h-[24vw] lg:w-[4vw] lg:h-[4vw] rounded-full bg-white overflow-hidden">
                                     <Image src={person.image} alt={person.name} className="w-full h-full object-cover object-top" />
                                 </div>
                                 <h1 className="text-base md:text-lg font-medium text-white mt-3">
