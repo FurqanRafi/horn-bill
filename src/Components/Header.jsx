@@ -101,7 +101,7 @@ const Header = () => {
                             <button className='absolute top-4 right-6 text-5xl text-yellow-400' onClick={() => setMenuOpen(false)}>
                                 &times;
                             </button>
-                            <nav className='mt-16 flex flex-col gap-6 text-lg font-semibold'>
+                            <nav className='mt-10 flex flex-col gap-6 text-lg font-semibold'>
                                 <Link href='/' onClick={() => setMenuOpen(false)}>Home</Link>
                                 <Link href='/about' onClick={() => setMenuOpen(false)}>About</Link>
                                 <Link href='/services' onClick={() => setMenuOpen(false)}>Services</Link>
