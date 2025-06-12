@@ -6,16 +6,18 @@ import Image from 'next/image'
 import logo from '@/assets/logo.webp'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false)
+    const pathname = usePathname();
     return (
         <div className='w-full'>
             {/* Header Top Row with animation */}
             <motion.div
                 initial={{ y: -50, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.6, ease: 'easeOut' }}
+                transition={{ duration: 1.09, ease: 'easeOut' }}
                 className='lg:w-full Mycontainer flex items-center justify-between py-6'
             >
                 {/* Logo */}
@@ -88,15 +90,19 @@ const Header = () => {
 
             {/* Desktop Nav */}
             <nav className='hidden Mycontainer lg:flex items-center justify-center gap-20 py-6 border-t bg-[#008df2] z-10 relative border-gray-200'>
-                {['/', '/about', '/services', '/contact'].map((href, i) => (
-                    <Link
-                        key={i}
-                        href={href}
-                        className='text-white text-xl font-medium cursor-pointer transition duration-300 ease-in-out hover:text-[#fab60a] hover:scale-105'
-                    >
-                        {href === '/' ? 'Home' : href.slice(1).charAt(0).toUpperCase() + href.slice(2)}
-                    </Link>
-                ))}
+                {['/', '/about', '/services', '/contact'].map((href, i) => {
+                    const isActive = pathname === href;
+                    return (
+                        <Link
+                            key={i}
+                            href={href}
+                            className={`text-xl font-medium cursor-pointer transition duration-300 ease-in-out ${isActive ? 'text-[#fab60a] scale-105' : 'text-white hover:text-[#fab60a] hover:scale-105'
+                                }`}
+                        >
+                            {href === '/' ? 'Home' : href.slice(1).charAt(0).toUpperCase() + href.slice(2)}
+                        </Link>
+                    );
+                })}
             </nav>
 
             {/* Mobile Nav with Smooth Blur & Transition */}
@@ -133,15 +139,20 @@ const Header = () => {
                                 &times;
                             </button>
                             <nav className='mt-10 flex flex-col gap-6 text-lg font-semibold'>
-                                {['/', '/about', '/services', '/contact'].map((href, i) => (
-                                    <Link
-                                        key={i}
-                                        href={href}
-                                        onClick={() => setMenuOpen(false)}
-                                    >
-                                        {href === '/' ? 'Home' : href.slice(1).charAt(0).toUpperCase() + href.slice(2)}
-                                    </Link>
-                                ))}
+                                {['/', '/about', '/services', '/contact'].map((href, i) => {
+                                    const isActive = pathname === href;
+                                    return (
+                                        <Link
+                                            key={i}
+                                            href={href}
+                                            onClick={() => setMenuOpen(false)}
+                                            className={`transition duration-300 ${isActive ? 'text-[#fab60a]' : 'text-black hover:text-[#fab60a]'
+                                                }`}
+                                        >
+                                            {href === '/' ? 'Home' : href.slice(1).charAt(0).toUpperCase() + href.slice(2)}
+                                        </Link>
+                                    );
+                                })}
                             </nav>
                         </motion.div>
                     </motion.div>

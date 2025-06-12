@@ -18,7 +18,7 @@ const page = () => {
         </h1>
       </div>
       </div>
-      <Services />      
+      <Services  />    
     </div>
   )
 }
