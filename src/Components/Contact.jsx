@@ -105,7 +105,7 @@ const Contact = () => {
           </motion.p>
         </div>
 
-        {/* Form */}
+        
         <motion.form
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -113,7 +113,7 @@ const Contact = () => {
           viewport={{ once: true }}
           className="bg-gray-50 p-6 sm:p-8 md:p-10 rounded-xl shadow-md grid grid-cols-1 md:grid-cols-2 gap-6"
         >
-          {/* Full Name */}
+          
           <div className="flex flex-col">
             <label className="text-gray-700 font-medium mb-1">Full Name</label>
             <input
@@ -123,7 +123,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Email */}
+          
           <div className="flex flex-col">
             <label className="text-gray-700 font-medium mb-1">Email</label>
             <input
@@ -133,7 +133,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Subject */}
+          
           <div className="flex flex-col md:col-span-2">
             <label className="text-gray-700 font-medium mb-1">Subject</label>
             <input
@@ -143,7 +143,7 @@ const Contact = () => {
             />
           </div>
 
-          {/* Message */}
+          
           <div className="flex flex-col md:col-span-2">
             <label className="text-gray-700 font-medium mb-1">Message</label>
             <textarea
@@ -153,7 +153,7 @@ const Contact = () => {
             ></textarea>
           </div>
 
-          {/* Submit Button */}
+          
           <div className="md:col-span-2 flex justify-center">
             <button
               type="submit"
