@@ -54,23 +54,30 @@
 // export default Services;
 
 'use client';
+
 import Image from 'next/image';
 import React from 'react';
+import { motion } from 'framer-motion';
 import Service from '@/assets/service.jpg';
 import { FaHeartbeat } from 'react-icons/fa';
-import { motion } from 'framer-motion';
 
 const Services = () => {
     return (
         <section className="Mycontainer flex justify-center pb-3 bg-white">
             <div className="w-full flex flex-col lg:flex-row overflow-hidden">
 
-                {/* LEFT IMAGE SIDE WITH HOVER ZOOM EFFECT */}
-                <div className="relative w-full lg:w-1/2 h-[300px] lg:h-auto overflow-hidden">
+                {/* LEFT IMAGE SIDE with animation */}
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.8 }}
+                    viewport={{ once: true }}
+                    className="relative w-full lg:w-1/2 h-[300px] lg:h-auto overflow-hidden"
+                >
                     <motion.div
-                        whileHover={{ scale: 1.1 }}
+                        whileHover={{ scale: 1.05 }}
                         transition={{ duration: 0.5 }}
-                        className="absolute inset-0"
+                        className="w-full h-full"
                     >
                         <Image
                             src={Service}
@@ -80,13 +87,13 @@ const Services = () => {
                             sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                     </motion.div>
-                </div>
+                </motion.div>
 
-                {/* RIGHT CONTENT SIDE WITH ANIMATION */}
+                {/* RIGHT CONTENT SIDE with animation */}
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.7 }}
+                    transition={{ duration: 0.8, delay: 0.2 }}
                     viewport={{ once: true }}
                     className="w-full lg:w-1/2 bg-[#0094f5] flex flex-col items-start p-8 md:p-12"
                 >
@@ -106,19 +113,12 @@ const Services = () => {
                             'Patient care products',
                             'Laboratory',
                         ].map((service, i) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.4, delay: 0.1 * i }}
-                                viewport={{ once: true }}
-                                className="flex items-center gap-3"
-                            >
+                            <div key={i} className="flex items-center gap-3">
                                 <div className="bg-white p-2 rounded-full text-[#0094f5]">
                                     <FaHeartbeat className="w-8 h-8" />
                                 </div>
                                 <span className="text-white text-sm md:text-base">{service}</span>
-                            </motion.div>
+                            </div>
                         ))}
                     </div>
                 </motion.div>
