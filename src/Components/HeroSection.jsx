@@ -5,7 +5,6 @@ import banner from '@/assets/banner.webp'
 const HeroSection = () => {
   return (
     <div className="w-full  lg:mt-[-76] relative">
-      {/* Background Image */}
       <Image
         src={banner}
         alt="banner"
@@ -13,10 +12,8 @@ const HeroSection = () => {
         priority
       />
 
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/60 " />
 
-      {/* Responsive Container (same as header) */}
       <div className="absolute inset-0 flex items-center justify-center   z-0">
         <div className="w-full Mycontainer ">
           <div className="w-full  ">
